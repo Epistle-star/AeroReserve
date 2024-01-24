@@ -1,0 +1,142 @@
+:root {
+  --txtColor: #222;
+  --linkColor: #b4ff00;
+}
+body {
+  height: 100%;
+  background: url(../Images/login.jpg);
+  background-size: cover;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 1rem 2%;
+  background: none;
+  z-index: 1001;
+}
+header .logo {
+  font-size: 3rem;
+  color: #2b2c2c;
+  text-decoration: none;
+  padding: 0.4rem;
+}
+header span {
+  color: var(--txtColor);
+  font-weight: 300;
+}
+.container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  background: #efffff21;
+  box-shadow: 0 0 1.9vh #151616;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.form-container {
+  padding: 20px;
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: center;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1.5px solid #222;
+  border-radius: 5px;
+  background: transparent;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid rgba(51, 24, 24, 0.658);
+  background: none;
+  color: #222;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+button[type="submit"]:hover {
+  background: #2c2d2e;
+  box-shadow: 0 0 20px #2b2c2c;
+  color: #fff;
+}
+
+#signup-form {
+  display: none;
+}
+input::placeholder {
+  color: #222;
+  font-size: 15px;
+}
+
+.feedback-container {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px;
+  text-align: center;
+  background-color: var(--txtColor);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  gap: 30px;
+  font-size: 0.9rem;
+}
+.feedback-container .close-btn {
+  cursor: pointer;
+}

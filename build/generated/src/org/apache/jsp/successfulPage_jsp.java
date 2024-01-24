@@ -1,0 +1,271 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class successfulPage_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write(" \n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("  <head>\n");
+      out.write("    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n");
+      out.write("    <title>Aeroreserve</title>\n");
+      out.write("\n");
+      out.write("    <style>\n");
+      out.write("      body {\n");
+      out.write("        background: whitesmoke;\n");
+      out.write("        display: flex;\n");
+      out.write("        justify-content: center;\n");
+      out.write("        align-items: center;\n");
+      out.write("        text-align: center;\n");
+      out.write("        font-family: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\",\n");
+      out.write("          Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\",\n");
+      out.write("          sans-serif;\n");
+      out.write("      }\n");
+      out.write("      a {\n");
+      out.write("        text-decoration: none;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .btn {\n");
+      out.write("        display: inline-block;\n");
+      out.write("        padding: 0.5rem 1.8rem;\n");
+      out.write("        font-size: 1rem;\n");
+      out.write("        border: 0.1rem solid #3ec1d5;\n");
+      out.write("        outline: 0;\n");
+      out.write("        background: #3ec1d5;\n");
+      out.write("        /* border-radius: 1rem; */\n");
+      out.write("        cursor: pointer;\n");
+      out.write("        text-align: center;\n");
+      out.write("        color: #fff;\n");
+      out.write("        transition: 0.5s;\n");
+      out.write("        margin-left: 1rem;\n");
+      out.write("        margin-right: 1rem;\n");
+      out.write("      }\n");
+      out.write("      .btn:hover {\n");
+      out.write("        background: none;\n");
+      out.write("        color: #3ec1d5;\n");
+      out.write("        transition: 0.5s;\n");
+      out.write("      }\n");
+      out.write("      header {\n");
+      out.write("        position: fixed;\n");
+      out.write("        top: -30px;\n");
+      out.write("        right: 0;\n");
+      out.write("        left: 0;\n");
+      out.write("        display: flex;\n");
+      out.write("        align-items: center;\n");
+      out.write("        justify-content: space-between;\n");
+      out.write("        padding: 1rem 2%;\n");
+      out.write("        background: none;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      header img {\n");
+      out.write("        height: 60px;\n");
+      out.write("        width: 60px;\n");
+      out.write("        border-radius: 50%;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      header .logo a {\n");
+      out.write("        color: #222;\n");
+      out.write("        display: flex;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      header .logo a span {\n");
+      out.write("        font-size: 2rem;\n");
+      out.write("        margin-top: 1rem;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      nav {\n");
+      out.write("        position: fixed;\n");
+      out.write("        isolation: isolate;\n");
+      out.write("        top: 0;\n");
+      out.write("        width: 100%;\n");
+      out.write("        max-width: var(--max-width);\n");
+      out.write("        margin: auto;\n");
+      out.write("        z-index: 9;\n");
+      out.write("        border-bottom: 1px solid rgba(255, 255, 255, 0.2);\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .container {\n");
+      out.write("        margin-top: 7rem;\n");
+      out.write("        position: relative;\n");
+      out.write("      }\n");
+      out.write("      .container#blur.active {\n");
+      out.write("        filter: blur(20px);\n");
+      out.write("        pointer-events: none;\n");
+      out.write("        user-select: none;\n");
+      out.write("      }\n");
+      out.write("      h1 {\n");
+      out.write("        font-weight: 800;\n");
+      out.write("        margin-top: 0;\n");
+      out.write("      }\n");
+      out.write("      .container p {\n");
+      out.write("        font-size: 1rem;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .booking-input {\n");
+      out.write("        display: inline-block;\n");
+      out.write("        gap: 5px;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .booking-input label {\n");
+      out.write("        font-size: 1.2rem;\n");
+      out.write("        font-weight: 500;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .booking-input input {\n");
+      out.write("        width: 50%;\n");
+      out.write("        padding: 0.5rem;\n");
+      out.write("        font-size: 1rem;\n");
+      out.write("        color: #222;\n");
+      out.write("        outline: none;\n");
+      out.write("        border: 1px solid #222;\n");
+      out.write("        border-radius: 2px;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .booking-btn {\n");
+      out.write("        margin-top: 4rem;\n");
+      out.write("        display: flex;\n");
+      out.write("        justify-content: space-between;\n");
+      out.write("        width: auto;\n");
+      out.write("        gap: 1rem;\n");
+      out.write("        text-align: right;\n");
+      out.write("      }\n");
+      out.write("      #popup {\n");
+      out.write("        position: fixed;\n");
+      out.write("        top: 40%;\n");
+      out.write("        left: 50%;\n");
+      out.write("        transform: translate(-50%, -50%);\n");
+      out.write("        width: 400px;\n");
+      out.write("        height: 200px;\n");
+      out.write("        padding: 50px;\n");
+      out.write("        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);\n");
+      out.write("        background: whitesmoke;\n");
+      out.write("        visibility: hidden;\n");
+      out.write("        opacity: 0;\n");
+      out.write("        transition: 0.5s;\n");
+      out.write("      }\n");
+      out.write("      #popup.active {\n");
+      out.write("        top: 50%;\n");
+      out.write("        visibility: visible;\n");
+      out.write("        opacity: 1;\n");
+      out.write("        transition: 0.5s;\n");
+      out.write("      }\n");
+      out.write("\n");
+      out.write("      .container span {\n");
+      out.write("        font-size: 1.5rem;\n");
+      out.write("        text-decoration: underline;\n");
+      out.write("        font-weight: 700;\n");
+      out.write("      }\n");
+      out.write("    </style>\n");
+      out.write("  </head>\n");
+      out.write("  <body>\n");
+      out.write("    <header class=\"header\">\n");
+      out.write("      <nav>\n");
+      out.write("        <div class=\"nav-bar\">\n");
+      out.write("          <div class=\"logo\">\n");
+      out.write("            <a href=\"homePage\"\n");
+      out.write("              ><img src=\"Images/logo.png\" alt=\"logo\" /><span\n");
+      out.write("                >Aeroreserve</span\n");
+      out.write("              ></a\n");
+      out.write("            >\n");
+      out.write("          </div>\n");
+      out.write("        </div>\n");
+      out.write("      </nav>\n");
+      out.write("    </header>\n");
+      out.write("\n");
+      out.write("    <div class=\"container\" id=\"blur\">\n");
+      out.write("      <div class=\"icon\">\n");
+      out.write("        <img src=\"./Images/success.gif\" alt=\"success image\" />\n");
+      out.write("      </div>\n");
+      out.write("      <h1>Congratulation</h1>\n");
+      out.write("      <p>Flights has been successfully booked have a safe trip ahead</p>\n");
+      out.write("      <p>\n");
+      out.write("        This is your Reference Code is <span>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${referenceCode}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</span> please keep\n");
+      out.write("        safe\n");
+      out.write("      </p>\n");
+      out.write("      <div class=\"button-section\">\n");
+      out.write("        <a href=\"homePage\" class=\"btn\">Go To Home</a>\n");
+      out.write("        <a href=\"search-flights\" class=\"btn\">Book Flights</a>\n");
+      out.write("        <p class=\"btn\" onclick=\"toggle()\">Search Flights</p>\n");
+      out.write("      </div>\n");
+      out.write("    </div>\n");
+      out.write("    <div id=\"popup\">\n");
+      out.write("      <h2>Search Flight</h2>\n");
+      out.write("      <form action=\"search-trip\" method=\"post\">\n");
+      out.write("        <div class=\"booking-input\">\n");
+      out.write("          <label for=\"referenceid\">Reference Code</label>\n");
+      out.write("          <input\n");
+      out.write("            type=\"text\"\n");
+      out.write("            name=\"referenceid\"\n");
+      out.write("            id=\"referenceid\"\n");
+      out.write("            placeholder=\"Reference Code\"\n");
+      out.write("          />\n");
+      out.write("          <div class=\"booking-btn\">\n");
+      out.write("            <button class=\"btn\">Search Flights</button>\n");
+      out.write("            <p class=\"btn\" onclick=\"toggle()\">Cancel</p>\n");
+      out.write("          </div>\n");
+      out.write("        </div>\n");
+      out.write("      </form>\n");
+      out.write("    </div>\n");
+      out.write("    <script>\n");
+      out.write("      function toggle() {\n");
+      out.write("        var blur = document.getElementById(\"blur\");\n");
+      out.write("        blur.classList.toggle(\"active\");\n");
+      out.write("        var popup = document.getElementById(\"popup\");\n");
+      out.write("        popup.classList.toggle(\"active\");\n");
+      out.write("      }\n");
+      out.write("    </script>\n");
+      out.write("  </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+}
